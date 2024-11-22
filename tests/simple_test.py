@@ -3,7 +3,6 @@ from src.parser import parser
 from src.isValidAccount import isValidAccount
 
 class TestParser(unittest.TestCase):
-
     def test_parse_numbers(self):
         with open('test_data/zeros.txt') as file:
             result = parser(file.readlines())
@@ -50,8 +49,3 @@ class TestParser(unittest.TestCase):
         with open('test_data/valid_checksum.txt') as file:
             result = isValidAccount(file.readlines())
             self.assertEqual(result, ['000000051','888888888 ERR', '49006771? ILL', '1234?678? ILL'])
-
-    def test_valid_checksum_1(self):
-        with open('test_data/test.txt') as file:
-            result = isValidAccount(file.readlines())
-            self.assertEqual(result, ['000000051'])

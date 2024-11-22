@@ -1,4 +1,6 @@
-
+'''
+Split each entry into 3x3 cells for a digit
+'''
 def parseNumbers(text):
     # for number 1 and 4 with no character in the 1st line - text[0]
     if (text[0] == '\n'):

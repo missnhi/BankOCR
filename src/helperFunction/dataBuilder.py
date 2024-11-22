@@ -1,3 +1,20 @@
+'''
+dataBuilder.py is a helper function that reads the test data from the test_data folder
+and builds a dictionary with the key as the number and the value as the digit that
+the number represents.
+EXAMPLE:
+data = {' _ | ||_|': '0',
+        '     |  |': '1',
+        ' _  _||_ ': '2',
+        ' _  _| _|': '3',
+        '   |_|  |': '4',
+        ' _ |_  _|': '5',
+        ' _ |_ |_|': '6',
+        ' _   |  |': '7',
+        ' _ |_||_|': '8',
+        ' _ |_| _|': '9'
+    }
+'''
 from src.helperFunction.parseNumbers import parseNumbers
 import os
 

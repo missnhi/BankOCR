@@ -10,12 +10,9 @@ def parser(text):
     for index, entry in enumerate(entries):
         entry = [line.replace('\n', '') for line in entry]
 
-        # print(f"entry befor: {entry} - {len(entry[0])} {len(entry[1])} {len(entry[2])} characters")
 
         # Add spaces to the end of line such as' - - ...' to make them 27 characters long
         entry = [line + ' ' * (27 - len(line)) if len(line) < 27 else line for line in entry[:3]]
-
-        # print(f"entry after: {entry} - {len(entry[0])} {len(entry[1])} {len(entry[2])} characters")
 
         # Split each entry into 3x3 cells for each digit
         digits = ''
